@@ -7,7 +7,6 @@ import CustomLink from '../../Pages/CustomLink/CustomLink';
 import "./Header.css"
 
 
-
 const Header = () => {
   const [user] = useAuthState(auth);
   const handleSignOut = () => {
@@ -27,11 +26,10 @@ const Header = () => {
             <CustomLink to="/packages">Packages</CustomLink>
 
 
-
             {
               user ? <>
                 <CustomLink to="/addProducts">Add Items</CustomLink>
-                <CustomLink to="/myOrders">My items</CustomLink>
+                <CustomLink to="/myOrders">My Items</CustomLink>
                 <CustomLink to="/manageInventories">Manage Items</CustomLink>
                 <button className="signOut-btn" style={{ color: 'black', fontSize: "20px" }} onClick={handleSignOut}>Logout</button>
 

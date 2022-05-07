@@ -1,4 +1,3 @@
-
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
@@ -19,7 +18,6 @@ import MyOrders from './components/Pages/My Orders/MyOrders';
 
 
 function App() {
-
 
   return (
     <div>

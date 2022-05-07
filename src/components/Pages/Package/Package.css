@@ -1,0 +1,7 @@
+
+.single_card{
+    background-color: rgb(174, 167, 167);
+}
+.go:hover::after{
+background-color: red;
+}

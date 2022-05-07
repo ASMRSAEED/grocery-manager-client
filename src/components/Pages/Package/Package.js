@@ -28,7 +28,7 @@ const Package = (props) => {
             <Card.Title className='fs-4'>Supplier Name:{spName}</Card.Title>
             <Card.Title className='fs-4'>Quantity: {quantity} KG</Card.Title>
             <Card.Text className='fs-4'>{description.slice(0, 50)}...</Card.Text>
-            <button className="update-btn fs-2" style={{ margin: "5px", padding: "10px", backgroundColor: "#FF6263", borderRadius: "25px", color: "#120E43", width: "40%" }} onClick={() => go(_id)}>Update</button>
+            <button className="fs-2" style={{ margin: "5px", padding: "10px", backgroundColor: "#FF6263", borderRadius: "25px", color: "#120E43", width: "40%" }} onClick={() => go(_id)}>Update</button>
 
           </Card.Body>
         </div>

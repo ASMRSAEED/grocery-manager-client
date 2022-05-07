@@ -7,10 +7,10 @@ import Speciality from './Speciality/Speciality';
 const Home = () => {
     return (
         <div>
-           <Banner></Banner>
-           <Inventory></Inventory>
-           <Speciality></Speciality>
-           <Gallery></Gallery>
+            <Banner></Banner>
+            <Inventory></Inventory>
+            <Gallery></Gallery>
+            <Speciality></Speciality>
         </div>
     );
 };

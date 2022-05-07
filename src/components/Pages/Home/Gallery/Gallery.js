@@ -7,7 +7,7 @@ const Gallery = () => {
         <div style={{ marginTop: 50 }}>
       <section className="gallery" id="gallery">
         <h1 className="heading">
-         Gallery
+        Upcoming Items
         </h1>
 
         <div className="box-container">

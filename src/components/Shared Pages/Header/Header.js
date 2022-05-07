@@ -13,15 +13,14 @@ const Header = () => {
     signOut(auth)
   }
 
-
   return (
     <Navbar collapseOnSelect expand="lg" bg="myColor" variant="dark">
       <Container>
-        <Navbar.Brand to="/" style={{ color: 'black', fontSize: "30px" }}>Grocery Manager</Navbar.Brand>
+        <Navbar.Brand style={{ color: 'black', fontSize: "30px" }}><CustomLink to="/home">Grocery Manager</CustomLink></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" style={{ color: 'black', fontSize: "20px" }}>
-            <CustomLink to="/" >Home</CustomLink>
+            <CustomLink to="/">Home</CustomLink>
             <CustomLink to="/blogs">Blogs</CustomLink>
             <CustomLink to="/packages">Packages</CustomLink>
 

@@ -6,12 +6,12 @@ import { getAuth } from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA-glax14qiIdzIxp9Hq1fekZxFsHzeXkI",
-  authDomain: "vehicle-manager-388f6.firebaseapp.com",
-  projectId: "vehicle-manager-388f6",
-  storageBucket: "vehicle-manager-388f6.appspot.com",
-  messagingSenderId: "564055169526",
-  appId: "1:564055169526:web:e4d87e9c05fee77c8bcfd7"
+  apiKey: "AIzaSyA3sVvhtwxngIxfqQwVSUxj4qOz71Jq2sM",
+  authDomain: "grocery-manager-a2e7a.firebaseapp.com",
+  projectId: "grocery-manager-a2e7a",
+  storageBucket: "grocery-manager-a2e7a.appspot.com",
+  messagingSenderId: "520482266392",
+  appId: "1:520482266392:web:83bd2cf9a15bd5e994126d"
 };
 
 // Initialize Firebase

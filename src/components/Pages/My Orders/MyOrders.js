@@ -56,7 +56,7 @@ const updateStock=(id)=>{
           <div>
           
            <div className="add">
-           <Link to="/addProducts"> <button style={{backgroundColor:"#516be9",color:"white", margin:"0 auto",justifyContent:"center",alignItems:"center"}} className="delivered_click">Add Products</button></Link>
+           <Link to="/addProducts"> <button style={{backgroundColor:"#516be9",color:"white", margin:"0 auto",justifyContent:"center",alignItems:"center"}} className="delivered_click">ADD ITEM</button></Link>
            </div>
             <h2 className="heading">My Items</h2>
           </div>

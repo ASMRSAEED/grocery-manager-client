@@ -21,7 +21,7 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" style={{ color: 'black', fontSize: "20px" }}>
             <CustomLink to="/">Home</CustomLink>
-            <CustomLink to="/packages">Packages</CustomLink>
+            {/* <CustomLink to="/packages">Packages</CustomLink> */}
             <CustomLink to="/blogs">Blogs</CustomLink>
 
 
@@ -29,7 +29,7 @@ const Header = () => {
               user ? <>
                 <CustomLink to="/addProducts">Add Items</CustomLink>
                 <CustomLink to="/myOrders">My Items</CustomLink>
-                <CustomLink to="/manageInventories">Manage Items</CustomLink>
+                <CustomLink to="/manageInventories">Manage Inventories</CustomLink>
                 <button className="signOut-btn" style={{ color: 'black', fontSize: "20px" }} onClick={handleSignOut}>Logout</button>
 
               </>

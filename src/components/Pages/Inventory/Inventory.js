@@ -9,7 +9,7 @@ const Inventory = () => {
     const [vegetables, setVegetables] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/vegetable')
+        fetch('https://sheltered-basin-32707.herokuapp.com/vegetable')
             .then(res => res.json())
             .then(data => setVegetables(data))
     }, [])

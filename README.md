@@ -1,8 +1,8 @@
 # Grocery Manager
 
-## Welcome to you in Grocery Manager react app
+## Welcome to my Grocery Manager app
 
-# [Live Website Link]()
+# [Live Website Link](https://grocery-manager-a2e7a.web.app/)
 
 
 This is the app for stock of your Grocery Items. You are able to upload your item with details information. You are also able to update your inventory / stock items.

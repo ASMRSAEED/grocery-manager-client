@@ -12,7 +12,7 @@ const Details = () => {
 
 
   useEffect(() => {
-    const url = `http://localhost:5000/vegetable/${id}`
+    const url = `https://sheltered-basin-32707.herokuapp.com/vegetable/${id}`
     console.log(url);
     fetch(url)
       .then(res => res.json())
@@ -26,7 +26,7 @@ const Details = () => {
     setVegetable(newInventory)
 
 
-    fetch(`http://localhost:5000/vegetable/${id}`, {
+    fetch(`https://sheltered-basin-32707.herokuapp.com/vegetable/${id}`, {
       method: 'PUT',
       body: JSON.stringify(newInventory),
       headers: {
@@ -47,7 +47,7 @@ const Details = () => {
     setVegetable(newInventory)
 
 
-    fetch(`http://localhost:5000/vegetable/${id}`, {
+    fetch(`https://sheltered-basin-32707.herokuapp.com/vegetable/${id}`, {
       method: 'PUT',
       body: JSON.stringify(newInventory),
       headers: {

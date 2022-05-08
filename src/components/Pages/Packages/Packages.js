@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row'
 const Packages = () => {
   const [vegetable, setVegetable] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/vegetable")
+    fetch("https://sheltered-basin-32707.herokuapp.com/vegetable")
       .then((res) => res.json())
       .then((data) => setVegetable(data));
   }, []);
@@ -16,20 +16,20 @@ const Packages = () => {
     <div style={{ marginTop: 40 }}>
       <h2 className="text-center heading">Packages</h2>
       <Container className="mb-5" >
-      
-          <Row>
-           {vegetable.map((p) => (
-          <Package key={p._id} vegetable={p}></Package>
-        ))}
-          </Row>
-        </Container> 
+
+        <Row>
+          {vegetable.map((p) => (
+            <Package key={p._id} vegetable={p}></Package>
+          ))}
+        </Row>
+      </Container>
     </div>
   );
 };
 
 export default Packages;
 
- 
+
 
 
 // <div>

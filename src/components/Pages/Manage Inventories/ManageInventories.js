@@ -10,7 +10,7 @@ const ManageInventories = () => {
 
 
   useEffect(() => {
-    fetch('http://localhost:5000/vegetable')
+    fetch('https://sheltered-basin-32707.herokuapp.com/vegetable')
       .then(res => res.json())
       .then(data => setVegetables(data))
   }, [])
@@ -18,7 +18,7 @@ const ManageInventories = () => {
   const inventoryDelete = id => {
     const proceed = window.confirm('Are you sure you want to delete?')
     if (proceed) {
-      const url = `http://localhost:5000/vegetable/${id}`;
+      const url = `https://sheltered-basin-32707.herokuapp.com/vegetable/${id}`;
       fetch(url, {
         method: 'DELETE'
       })

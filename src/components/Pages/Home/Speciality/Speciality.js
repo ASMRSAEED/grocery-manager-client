@@ -1,20 +1,19 @@
 import React from 'react';
 import "./Speciality.css"
 import {
-  FcEngineering,
+  FcMoneyTransfer,
   FcOnlineSupport,
-  FcProcess,
-  FcInTransit,
-  FcBrokenLink,
+  FcRefresh,
+  FcShipped,
+  FcPaid,
   FcCurrencyExchange,
-  FcBiotech,
-  FcBinoculars,
+  FcPortraitMode,
 } from "react-icons/fc";
 
 const Speciality = () => {
   return (
     <div>
-      <section style={{ marginTop: 50 }} className="services" id="services">
+      <section style={{ marginTop: 50 }} className="services">
         <div>
           <h1 className="heading">
             SHOP WITH US
@@ -22,52 +21,53 @@ const Speciality = () => {
         </div>
 
         <div className="box-container text-center">
-          <div className="box">
+          <div className="box border border-warning ">
             <i>
-              <FcEngineering></FcEngineering>
+              <FcMoneyTransfer></FcMoneyTransfer>
             </i>
             <h3>Great value</h3>
             <p>We offer competitive prices on all of our items.</p>
           </div>
-          <div className="box">
+          <div className="box border border-warning">
             <i>
-              <FcOnlineSupport></FcOnlineSupport>
+
+              <FcCurrencyExchange></FcCurrencyExchange>
             </i>
             <h3>Safe payment</h3>
             <p>Pay with the world’s most popular and secure payment methods.</p>
           </div>
-          <div className="box">
+          <div className="box border border-warning">
             <i>
-              <FcBrokenLink></FcBrokenLink>
+              <FcPaid></FcPaid>
             </i>
             <h3>Shop with confidence</h3>
             <p>Our Buyer Protection policy covers your entire purchase journey.</p>
           </div>
-          <div className="box">
+          <div className="box border border-warning">
             <i>
               {" "}
-              <FcProcess></FcProcess>
+              <FcOnlineSupport></FcOnlineSupport>
             </i>
             <h3>Help center</h3>
             <p>Round-the-clock assistance for a smooth shopping experience.</p>
           </div>
-          <div className="box">
+          <div className="box border border-warning">
             <i>
-              <FcInTransit></FcInTransit>
+              <FcShipped></FcShipped>
             </i>
             <h3>Shop better</h3>
             <p>Download the app for mobile-only features such as image search and discount games.</p>
           </div>
-          <div className="box">
+          <div className="box border border-warning">
             <i>
               <FcCurrencyExchange></FcCurrencyExchange>
             </i>
             <h3>Easy payment</h3>
             <p> Enjoy 0% interest for installment payment. * Conditions Apply</p>
           </div>
-          <div className="box">
+          <div className="box border border-warning">
             <i>
-              <FcBiotech></FcBiotech>
+              <FcPortraitMode></FcPortraitMode>
             </i>
             <h3>Membership policy</h3>
             <p>
@@ -75,9 +75,9 @@ const Speciality = () => {
               Conditions Apply
             </p>
           </div>
-          <div className="box">
+          <div className="box border border-warning">
             <i>
-              <FcBinoculars></FcBinoculars>
+              <FcRefresh></FcRefresh>
             </i>
             <h3>Refund policy</h3>
             <p>

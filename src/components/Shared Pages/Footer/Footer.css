@@ -28,15 +28,7 @@
   text-decoration: none;
 }
 
-
-
-.footer .credit {
-  padding: 2.5rem 1rem;
-  color: rgb(34, 29, 29);
-  font-weight: normal;
-  font-size: 2rem;
-}
-
-.footer .credit span {
-  color: red;
+.footer .copyright {
+  text-align: center;
+  margin-top: 20px;
 }

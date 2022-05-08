@@ -30,8 +30,7 @@ const Footer = () => {
         </div>
 
         <h1 className="copyright">
-          Copyright@ Grocery Manager
-          | All Rights Reserved! 2022
+          Copyright@ Grocery Manager. All Rights Reserved. 2022
         </h1>
       </section>
     </div>

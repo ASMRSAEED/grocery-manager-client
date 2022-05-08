@@ -45,3 +45,24 @@
 .box-button-2:hover {
   background-color: rgb(73, 24, 8);
 }
+
+@media only screen and (max-width: 460px) {
+
+  .add-button {
+    top: 60%;
+    left: 32%;
+    background-color: brown;
+    font-size: 20px;
+    border-radius: 5px 25px 5px 25px;
+    padding: 10px 30px
+  }
+
+  .heading {
+    margin-top: 200px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(212, 112, 30);
+  }
+
+}

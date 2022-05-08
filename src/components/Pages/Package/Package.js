@@ -12,8 +12,8 @@ const Package = (props) => {
   }
   return (
 
-    <Col className="my-5 text-center" sm={12} md={6} lg={4}>
-      <div className='shadow' style={{ backgroundColor: "#f9f4f4", borderRadius: "25px", width: "415px", height: "750px" }}>
+    <Col className="my-5 text-center">
+      <div className='shadow' style={{ backgroundColor: "#f9f4f4", borderRadius: "25px", width: "400px", height: "750px" }}>
         <Card.Img className='card-images' src={img} />
         <Card.Body className='card-top'>
           <Card.Title className="text-uppercase"><b>{name}</b></Card.Title>

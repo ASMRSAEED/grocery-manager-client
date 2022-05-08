@@ -1,14 +1,11 @@
-.submit-button {
-    font-size: 20px;
-    background-color: blue;
-    color: #fff;
-}
-
 .forgot-pass {
     text-decoration: none;
+    color: blanchedalmond;
     font-size: 20px;
-    font-weight: 600;
-    color: red;
+}
+
+.forgot-pass:hover {
+    color: coral;
 }
 
 .submit-button:hover {
@@ -18,53 +15,11 @@
 .profile-image-pic {
     height: 100px;
     width: 100px;
-    object-fit: cover;
 }
 
-.main-container {
-    width: 800px;
-}
-
-.cardbody-color {
-    background-color: #ebf2fa;
-}
-
-.signup a:hover {
-    color: #0e1c36;
-}
-
-.signup a {
-    font-size: 25px;
-    font-weight: 600;
-
-}
-
-.signup p {
-    font-size: 25px;
-    font-weight: 800;
-
-}
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
-}
-
-.password-eye {
-    position: relative;
-    width: 295px;
-}
-
-.card-body {
-    width: 450px;
-}
-
-.password-eye img {
-    cursor: pointer;
-    position: absolute;
-    width: 20px;
-    right: 8px;
-    top: 8px;
+.user-input {
+    margin-right: 35%;
+    margin-left: 35%;
 }
 
 .divider {
@@ -82,4 +37,12 @@ code {
 
 .social-login-1 {
     text-align: center;
+}
+
+@media only screen and (max-width: 460px) {
+    .user-input {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
 }

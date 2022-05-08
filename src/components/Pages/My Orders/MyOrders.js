@@ -68,7 +68,7 @@ const MyOrders = () => {
                     <th>MANAGE ITEM</th>
                   </tr>
                 </thead>
-                <tbody style={{ fontSize: "15px", textAlign: 'center', color: '#a8c4a8' }}>
+                <tbody className='item-table' style={{ fontSize: "15px", textAlign: 'center', color: '#a8c4a8' }}>
                   {vegetables.map((vegetable) => (
                     <tr key={vegetable._id}>
                       <td style={{ color: 'white' }}>{vegetable?._id}</td>

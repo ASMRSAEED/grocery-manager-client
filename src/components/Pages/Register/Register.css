@@ -9,54 +9,22 @@
     background-color: green;
 }
 
-.anchor {
-    color: #0e1c36;
-}
-
-.btn-color:hover {
-    color: #ebf2fa;
-}
-
-.anchor {
-    margin-left: -10px;
-}
-
-.profile-image-pic {
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-}
-
-.main-container {
-    width: 800px;
-}
-
-.cardbody-color {
-    background-color: #ebf2fa;
-
-}
-
-.anchor {
-    text-decoration: none;
-}
-
-.signup a:hover {
-    color: #0e1c36;
-}
-
 .signup a {
-    font-weight: 600;
-
+    text-decoration: none;
+    font-size: 30px;
+    color: coral;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
+.signup a:hover{
+    color:burlywood ;
+}
+
+.signup p{
+    font-size: 25px;
 }
 
 .pwd-container {
     position: relative;
-    width: 295px;
 }
 
 .pwd-container img {
@@ -64,5 +32,5 @@ code {
     position: absolute;
     width: 20px;
     right: 8px;
-    top: 8px;
+    top: 15px;
 }

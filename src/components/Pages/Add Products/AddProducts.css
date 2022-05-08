@@ -34,3 +34,17 @@ textarea {
 .add_button:hover {
   background-color: green;
 }
+
+
+@media only screen and (max-width: 460px) {
+
+  .form-control {
+    padding-inline: 50%;
+  }
+
+  .text {
+    padding-inline: 50%;
+   
+  }
+
+}

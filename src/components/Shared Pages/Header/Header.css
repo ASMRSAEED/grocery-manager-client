@@ -6,7 +6,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 460px) {
 
     #menu-btn {
         display: initial;
@@ -39,11 +39,9 @@
         margin: 2.5rem;
     }
 
+    .logout-btn {
+        margin-left: 14px;
+        text-align: start;
 
-}
-
-@media (max-width: 450px) {
-    html {
-        font-size: 50%;
     }
 }

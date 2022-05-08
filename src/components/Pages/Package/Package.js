@@ -22,11 +22,11 @@ const Package = (props) => {
           />
         </div>
         <div style={{ backgroundColor: "#1FAA59", borderRadius: "25px" }}>
-          <Card.Body style={{ marginTop: "30px" }}>
-            <Card.Title className="text-uppercase fs-2">{name}</Card.Title>
-            <Card.Title className='fs-4'>Price: {price} TK</Card.Title>
-            <Card.Title className='fs-4'>Supplier Name:{spName}</Card.Title>
-            <Card.Title className='fs-4'>Quantity: {quantity} KG</Card.Title>
+          <Card.Body style={{ marginTop: "5px" }}>
+            <Card.Title className="text-uppercase fs-2"><b>{name}</b></Card.Title>
+            <Card.Title className='fs-4'><b>Price:</b> {price} TK</Card.Title>
+            <Card.Title className='fs-4'><b>Supplier Name:</b> {spName}</Card.Title>
+            <Card.Title className='fs-4'><b>Quantity:</b> {quantity} KG</Card.Title>
             <Card.Text className='fs-4'>{description.slice(0, 50)}...</Card.Text>
             <button className="fs-2" style={{ margin: "5px", padding: "10px", backgroundColor: "#FF6263", borderRadius: "25px", color: "#120E43", width: "40%" }} onClick={() => go(_id)}>Update</button>
 

@@ -1,237 +1,148 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 
 const Gallery = () => {
-    return (
-        <div style={{ marginTop: 50 }}>
+  return (
+    <div style={{ marginTop: 50 }}>
       <section className="gallery" id="gallery">
         <h1 className="heading">
-        Upcoming Items
+          Upcoming Items
         </h1>
 
         <div className="box-container">
           <div className="box">
             <img
-              src="https://i.ibb.co/5s19dr3/pexels-pixabay-248489.jpg"
+              src="https://i.ibb.co/FKQxMjT/21-Garlic-Local.png"
               alt=""
             />
             <div className="content">
-              <h3>the green</h3>
+              <h3>Garlic Local</h3>
 
-            
+
             </div>
           </div>
 
           <div className="box">
             <img
-              src="https://i.ibb.co/QcwL9qM/pexels-karolina-grabowska-4963500.jpg"
+              src="https://i.ibb.co/yfKphyQ/22-Green-Papaya.png"
               alt=""
             />
             <div className="content">
-              <h3>the posh</h3>
+              <h3>Green Papaya</h3>
 
-              
+
             </div>
           </div>
           <div className="box">
-            <img src="https://i.ibb.co/JmRMgTS/pexels-artem-beliaikin-452773.jpg" alt="" />
+            <img src="https://i.ibb.co/ckfGbM3/23-Local-Ginger.png"
+              alt="" />
             <div className="content">
-              <h3>the classy</h3>
+              <h3>Local Ginger</h3>
 
-              
+
             </div>
           </div>
           <div className="box">
-            <img src="https://i.ibb.co/nmhRK93/pexels-polina-tankilevitch-3872406.jpg" alt="" />
+            <img src="https://i.ibb.co/fGnfhKr/24-Cabbage.png"
+              alt="" />
             <div className="content">
-              <h3>the superb</h3>
+              <h3>Cabbage</h3>
 
-             
+
             </div>
           </div>
           <div className="box">
             <img
-              src="https://i.ibb.co/9g2vJxL/pexels-cats-coming-750952.jpg"
+              src="https://i.ibb.co/JtG3SYP/25-Ladies-Finger.png"
               alt=""
             />
             <div className="content">
-              <h3>the calm</h3>
+              <h3>Ladies Finger</h3>
 
-             
+
             </div>
           </div>
           <div className="box">
             <img
-              src="https://i.ibb.co/XDFhqFC/pexels-pixabay-185402.jpg"
+              src="https://i.ibb.co/tMx7BTg/26-Water-Spinach.png"
               alt=""
             />
             <div className="content">
-              <h3>the reality</h3>
+              <h3>Water Spinach</h3>
 
-             
+
             </div>
           </div>
           <div className="box">
             <img
-              src="https://i.ibb.co/kcDpvYL/pexels-alexia-bianchini-2741620.jpg"
+              src="https://i.ibb.co/wNVRtfF/27-Sweet-Pumpkin.png"
               alt=""
             />
             <div className="content">
-              <h3>the ultimate</h3>
+              <h3>Sweet Pumpkin Slice</h3>
 
-             
+
             </div>
           </div>
           <div className="box">
             <img
-              src="https://i.ibb.co/JvFkCFY/pexels-daria-shevtsova-4117545.jpg"
+              src="https://i.ibb.co/jks7GPt/28-Green-Capsicum.png"
               alt=""
             />
             <div className="content">
-              <h3>the valuable</h3>
+              <h3>Green Capsicum</h3>
 
-           
+
             </div>
           </div>
           <div className="box">
             <img
-              src="https://i.ibb.co/qmnGQnS/pexels-abet-llacer-3025236-1.jpg"
+              src="https://i.ibb.co/hYrcHqH/29-Red-Potato-Cardinal.png"
               alt=""
             />
             <div className="content">
-              <h3>the tidy</h3>
+              <h3>Red Potato Cardinal</h3>
 
-             
+
             </div>
           </div>
           <div className="box">
             <img
-              src="https://i.ibb.co/Gx0qtGT/pexels-polina-tankilevitch-3872407.jpg"
+              src="https://i.ibb.co/x1V0sDC/30-Red-Potato.png"
               alt=""
             />
             <div className="content">
-              <h3>the fresh</h3>
+              <h3>Red Potato</h3>
 
-         
+
             </div>
           </div>
           <div className="box">
             <img
-              src="https://i.ibb.co/X4tFQJs/pexels-chandra-elancheran-754315-1.jpg"
+              src="https://i.ibb.co/p163mpV/31-Pointed-Gourd.png"
               alt=""
             />
             <div className="content">
-              <h3>the wholesome</h3>
+              <h3>Pointed Gourd</h3>
 
-           
+
             </div>
           </div>
           <div className="box">
             <img
-              src="https://i.ibb.co/sgsM3Bq/pexels-pixabay-264537.jpg"
+              src="https://i.ibb.co/gy7HfWw/32-Snake-Gourd.png"
               alt=""
             />
             <div className="content">
-              <h3>the bluish</h3>
-
-           
+              <h3>Snake Gourd</h3>
             </div>
           </div>
-          <div className="box">
-            <img
-              src="https://i.ibb.co/C5W5Fz0/pexels-jill-wellington-35625-1.jpg"
-              alt=""
-            />
-            <div className="content">
-              <h3>the posh</h3>
 
-           
-            </div>
-          </div>
-          <div className="box">
-            <img
-              src="https://i.ibb.co/yRQjc6f/vegetables-752153-480.jpg"
-              alt=""
-            />
-            <div className="content">
-              <h3>the chill</h3>
 
-             
-            </div>
-          </div>
-          <div className="box">
-            <img
-              src="https://i.ibb.co/GvmVk21/pumpkin-1768857-340.jpg"
-              alt=""
-            />
-            <div className="content">
-              <h3>the smily</h3>
-
-         
-            </div>
-          </div>
-          <div className="box">
-            <img
-              src="https://i.ibb.co/fCRfPvm/tomatoes-1561565-340.jpg"
-              alt=""
-            />
-            <div className="content">
-              <h3>the nature</h3>
-
-          
-            </div>
-          </div>
-          <div className="box">
-            <img
-              src="https://i.ibb.co/DD4p0MY/tomatoes-5377571-480.jpg"
-              alt=""
-            />
-            <div className="content">
-              <h3>the happiness</h3>
-
-             
-            </div>
-          </div>
-          <div className="box">
-            <img
-              src="https://i.ibb.co/HBzd8vD/vegetables-3386212-340.jpg"
-              alt=""
-            />
-            <div className="content">
-              <h3>the healthy</h3>
-
-              
-            </div>
-          </div>
-          <div className="box">
-            <img
-              src="https://i.ibb.co/wsvrTTY/cucumber-plant-6614241-340.jpg"
-              alt=""
-            />
-            <div className="content">
-              <h3>the colorful</h3>
-
-           
-            </div>
-          </div>
-          <div className="box">
-            <img
-              src="https://i.ibb.co/XDFhqFC/pexels-pixabay-185402.jpg"
-              alt=""
-            />
-            <div className="content">
-              <h3>the green</h3>
-
-             
-            </div>
-          </div>
-         
-       
         </div>
       </section>
     </div>
-    );
+  );
 };
 
 export default Gallery;

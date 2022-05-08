@@ -21,8 +21,8 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" style={{ color: 'black', fontSize: "20px" }}>
             <CustomLink to="/">Home</CustomLink>
-            <CustomLink to="/blogs">Blogs</CustomLink>
             <CustomLink to="/packages">Packages</CustomLink>
+            <CustomLink to="/blogs">Blogs</CustomLink>
 
 
             {

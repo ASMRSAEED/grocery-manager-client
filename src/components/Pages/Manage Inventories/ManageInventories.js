@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './ManageInventories.css'
 import { Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
@@ -7,7 +8,6 @@ import SingleInventory from '../Single Inventory/SingleInventory';
 const ManageInventories = () => {
 
   const [vegetables, setVegetables] = useState([])
-
 
   useEffect(() => {
     fetch('https://sheltered-basin-32707.herokuapp.com/vegetable')
@@ -46,16 +46,17 @@ const ManageInventories = () => {
         })
     }
   }
+
+
   return (
     <div>
-      <div className="add">
-        <Link to="/addProducts"> <button style={{ backgroundColor: "#1C8D73", color: "#EDC126", margin: "50px auto", justifyContent: "center", alignItems: "center" }} className="delivered_click">ADD ITEM</button></Link>
+      <div>
+        <Link to="/addProducts"> <button className="add-button">ADD ITEM</button></Link>
       </div>
 
-      <h2 className="heading mt-5">Manage Inventories</h2>
-      <Container className="mb-5">
-
-        <Row>
+      <h2 className='inv-text'>Manage Inventories</h2>
+      <Container>
+        <Row >
           {
             vegetables.map((vegetable) =>
             (<SingleInventory

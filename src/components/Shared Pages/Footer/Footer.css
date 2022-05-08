@@ -2,33 +2,39 @@
   background: #B0E5BC;
 }
 
+h2{
+  margin-top: 25px;
+}
+
 .footer-details {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .footer .social-icon {
-  font-size: 30px;
-  margin-right: 50px;
+  font-size: 2rem;
 }
 
 .social-icon a {
-  padding-right: 20px;
+  padding: .5rem;
 }
 
 .footer-middle a {
-  font-size: 15px;
+  font-size: 1rem;
   display: flex;
   text-decoration: none;
 }
 
 .footer-end a {
-  font-size: 15px;
+  font-size: 1rem;
   display: flex;
   text-decoration: none;
 }
 
 .footer .copyright {
+  font-size: 1.5rem;
   text-align: center;
-  margin-top: 20px;
+  padding: 25px;
+
 }
+

@@ -1,0 +1,32 @@
+.services .box-container {
+    margin: 7rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.services .box-container .box {
+    background: rgb(210, 170, 170);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 1.5rem;
+}
+
+.services .box-container .box i {
+    color: var(--green);
+    font-size: 5rem;
+    padding-bottom: 0.2rem;
+}
+
+.services .box-container .box h3 {
+    color: var(--black);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.services .box-container .box p {
+    color: var(--light-color);
+    font-size: 1rem;
+    line-height: 1;
+}

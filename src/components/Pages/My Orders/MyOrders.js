@@ -54,36 +54,31 @@ const MyOrders = () => {
         <div className="py-5">
           <div className="container">
             <div>
-
-              <div className="add">
-                <Link to="/addProducts"> <button style={{ backgroundColor: "#516be9", color: "white", margin: "0 auto", justifyContent: "center", alignItems: "center" }} className="delivered_click">ADD ITEM</button></Link>
-              </div>
-              <h2 className="heading">My Items</h2>
+              <Link to="/addProducts"> <button className='add-button'>ADD ITEM</button></Link>
             </div>
             <div className="mx-auto">
+              <h2 className="heading">MY ITEMS</h2>
               <Table striped bordered responsive hover>
-                <thead>
+                <thead style={{ fontSize: "15px", textAlign: 'center', color: '#a8c4a8' }}>
                   <tr>
-                    <th style={{ textAlign: 'center' }}>Product Id</th>
-                    <th style={{ textAlign: 'center' }}> Name</th>
-                    <th style={{ textAlign: 'center' }}>Price</th>
-                    <th style={{ textAlign: 'center' }}>Quantity</th>
-                    <th style={{ textAlign: 'center' }}>Actions</th>
+                    <th>PRODUCT ID</th>
+                    <th>NAME</th>
+                    <th>PRICE</th>
+                    <th>AVAILABLE QUANTITY</th>
+                    <th>MANAGE ITEM</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody style={{ fontSize: "15px", textAlign: 'center', color: '#a8c4a8' }}>
                   {vegetables.map((vegetable) => (
                     <tr key={vegetable._id}>
-                      <td>{vegetable?._id}</td>
-                      <td>{vegetable?.name}</td>
-                      <td>{vegetable?.price}</td>
-                      <td>{vegetable?.quantity}</td>
+                      <td style={{ color: 'white' }}>{vegetable?._id}</td>
+                      <td style={{ color: 'white' }}>{vegetable?.name}</td>
+                      <td style={{ color: 'white' }}>{vegetable?.price}</td>
+                      <td style={{ color: 'white' }}>{vegetable?.quantity}</td>
                       <td>
                         <div className="d-flex">
-                          <button onClick={() => updateStock(vegetable?._id)} style={{ margin: "15px", padding: "12px", backgroundColor: "green", borderRadius: "5px", color: "white", width: "50%" }}>Update stock</button>
-                          <button
-                            onClick={() => orderCancel(vegetable?._id)}
-                            style={{ margin: "15px", padding: "12px", backgroundColor: "red", borderRadius: "5px", color: "white", width: "50%" }} >Cancel</button></div>
+                          <button className='box-button-1' onClick={() => updateStock(vegetable?._id)}>Update Stock</button>
+                          <button className='box-button-2' onClick={() => orderCancel(vegetable?._id)}>Delete Item</button></div>
                       </td>
                     </tr>
                   ))}

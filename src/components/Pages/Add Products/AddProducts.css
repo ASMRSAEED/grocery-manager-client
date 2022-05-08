@@ -1,27 +1,36 @@
 .add-service form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .form-control{
-     height:50px;
-     border: 2px solid red;
-     border-radius: 5px;
-  }
-  .add-service form input,
-  textarea {
-    width: 40%;
-    margin-bottom: 10px;
-  }
-  .text{
-    height:50px;
-    border: 2px solid red;
-    border-radius: 5px;
-  }
-  .add_button{
-    background-color:orange;
-    border-radius: 20px;
-    height: 40px;
-    font-size: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  height: 50px;
+  border: 2px solid green;
+  border-radius: 15px;
+}
+
+.add-service form input,
+textarea {
+  font-size: 20px;
+  width: 35%;
+  margin-bottom: 10px;
+}
+
+.text {
+  height: 50px;
+  border: 2px solid green;
+  border-radius: 15px;
+}
+
+.add_button {
+  background-color: rgb(188, 87, 131);
+  border-radius: 20px;
+  height: 40px;
+  font-size: 30px;
+}
+
+.add_button:hover {
+  background-color: green;
+}

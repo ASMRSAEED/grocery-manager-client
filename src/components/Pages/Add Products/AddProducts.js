@@ -20,31 +20,30 @@ const AddProducts = () => {
       .then(res => res.json())
       .then(data => {
         console.log("success", data);
-        toast('Successfully added')
+        toast('Item Successfully added')
         reset()
       })
 
   };
   return (
     <div className="add-service m-5">
-      <h2 className="text-center" style={{ marginTop: '20px', color: 'blue', fontSize: '30px' }}>Please add your desired items</h2>
+      <h2 className="text-center" style={{ margin: '40px', color: 'white', fontSize: '40px' }}>INPUT ITEM DETAILS</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <input style={{ height: "50px", border: "2px solid red" }}
-          className="form-control"
+        <input className="form-control"
           {...register("name", { required: true, maxLength: 20 })}
-          placeholder="Product Name"
+          placeholder="Item Name"
         />
         <input
           className="form-control"
           {...register("img")}
-          placeholder="image url"
+          placeholder="Image URL"
         />
-        <textarea className="text" {...register("description")} placeholder="Description" />
+        <textarea className="text" {...register("description")} placeholder=" Description" />
         <input
           className="form-control"
           type="number"
           {...register("price")}
-          placeholder="Taka"
+          placeholder="Price"
         />
         <input
           className="form-control"

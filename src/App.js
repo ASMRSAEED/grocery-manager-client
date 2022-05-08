@@ -20,7 +20,7 @@ import MyOrders from './components/Pages/My Orders/MyOrders';
 function App() {
 
   return (
-    <div>
+    <div className='total-web'>
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>

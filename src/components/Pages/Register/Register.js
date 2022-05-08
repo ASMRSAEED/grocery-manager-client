@@ -1,90 +1,112 @@
-import React from 'react';
-import "./Register.css"
-import  { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { FcGoogle } from "react-icons/fc";
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import auth from '../../Firebase/firebase.init';
+import React, { useState } from "react";
+import "./Register.css";
+import showPwdImg from "./show-password.svg";
+import hidePwdImg from "./hide-password.svg";
+import { Link, useNavigate } from "react-router-dom";
+import auth from "../../Firebase/firebase.init"
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useUpdateProfile } from "react-firebase-hooks/auth";
+import Loading from "../../Shared Pages/Loading/Loading";
 
 const Register = () => {
+    const [pwd, setPwd] = useState("");
+    const [isRevealPwd, setIsRevealPwd] = useState(false);
+    const navigate = useNavigate();
 
-const [email,setEmail]=useState(' ')
-const [password,setPassword]=useState(' ')
-const [confirmPassword,setConfirmPassword]=useState(' ')
-const [error,setError]=useState(' ')
-const navigate= useNavigate()
-
-const [createUserWithEmailAndPassword,user]=useCreateUserWithEmailAndPassword(auth)
+    const [createUserWithEmailAndPassword, user, loading, error] =
+        useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
 
-// Email & password authentication
-const handleEmailBlur=(e) => {
-setEmail(e.target.value)
-}
-const handlePasswordBlur=(e) => {
-setPassword(e.target.value)
-}
-const handleConfirmPasswordBlur=(e) => {
-setConfirmPassword(e.target.value)
-}
-
-
-if (user) {
-   navigate('/home') 
-}
-const handleCreateUser=(e) => {
-    e.preventDefault();
-    if(password !==confirmPassword){
-        setError('Your two passwords did not match!!')
-        return;
+    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+    if (loading || updating) {
+        return <Loading></Loading>
     }
-    if(password.length<6){
-        setError('Your Password must be at least 6 characters or longer!!')
-        return;
+
+    const handleSignUp = async (event) => {
+        event.preventDefault();
+
+        const name = event.target.text.value;
+        const email = event.target.email.value;
+        const password = event.target.pwd.value;
+        await createUserWithEmailAndPassword(email, password);
+        await updateProfile({ displayName: name });
+    };
+
+    if (user) {
+        navigate("/");
     }
-    createUserWithEmailAndPassword(email, password)
-}
 
 
     return (
-        <div className="form_container">
-        <div>
-            <h2 className="form_title">Sign Up</h2>
-            <form onSubmit={handleCreateUser} >
-            
-            <div className="input_group">
-            <label htmlFor="email">Email</label>
-            <input onBlur={handleEmailBlur} type="email" name="email" id="" required/>
+        <div className="container main-container">
+            <div className="row">
+                <div className="col-md-6 offset-md-3">
+                    <div className="card mb-5">
+                        <form
+                            onSubmit={handleSignUp}
+                            className="card-body cardbody-color p-lg-5"
+                        >
+                            <div className="text-center">
+                                <img
+                                    src="https://i.ibb.co/n1bKcX7/favicon.png"
+                                    className="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+                                    width="200px"
+                                    alt="profile"
+                                />
+                            </div>
+
+                            <div className="mb-3">
+                                <input
+                                    type="text"
+                                    name="text"
+                                    className="form-control"
+                                    id="Username"
+                                    aria-describedby="emailHelp"
+                                    placeholder="User Name"
+                                />
+                            </div>
+                            <div className="mb-3 enter-email">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    className="form-control"
+                                    id="Username"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Enter Email"
+                                />
+                            </div>
+                            <div className="mb-3 pwd-container w-100">
+                                <input
+                                    style={{ width: "100%" }}
+                                    className="form-control"
+                                    id="password"
+                                    name="pwd"
+                                    placeholder="Enter Password"
+                                    type={isRevealPwd ? "text" : "password"}
+                                    value={pwd}
+                                    onChange={(e) => setPwd(e.target.value)}
+                                />
+                                <img
+                                    title={isRevealPwd ? "Hide password" : "Show password"}
+                                    src={isRevealPwd ? hidePwdImg : showPwdImg}
+                                    onClick={() => setIsRevealPwd((prevState) => !prevState)} alt=""
+                                />
+                            </div>
+                            <div className="text-center">
+                                <button type="submit" className="btn btn-color signup-btn px-5  w-100">
+                                    SIGN UP
+                                </button>
+                            </div>
+                            <div className="text-center mt-2 m-0 mb-5 p-0 d-flex justify-content-center align-items-center">
+                                <div className="signup">
+                                    <p>Already have an account?<Link to="/login">PLEASE LOGIN</Link></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            
-            <div className="input_group">
-            <label htmlFor="password">Password</label>
-            <input onBlur={handlePasswordBlur} type="password" name="password" id="" required />
-            </div>
-            
-            <div className="input_group">
-            <label htmlFor="password">Confirm Password</label>
-            <input onBlur={handleConfirmPasswordBlur} type="password" name="password" id="" required/>
-            </div>
-            <p style={{ color: 'red'}}>
-                {error }
-            </p>
-            <div >
-                <input className="form_submit" type="submit" value="Sign up" />
-            </div>
-            </form>
-            <div className="form_text"><p>Already have an account? <Link className="form_link" to="/login">Login</Link></p></div>
-            <div className="divider">
-            <div className="divider_line"></div><p>or</p>
-            <div className="divider_line"></div>
-            </div>
-            <div >
-                <button className="form_submit_google" ><FcGoogle></FcGoogle>  Continue with Google</button>
-               
-            </div>
-           
         </div>
-    </div>
     );
 };
 

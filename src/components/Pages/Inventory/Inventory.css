@@ -1,15 +1,14 @@
 .inv_btn {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 30px;
 
 }
 
 .btn_text {
-    background-color: rgb(26, 176, 73);
+    background-color: rgb(194, 218, 202);
     border-radius: 30px;
-    border: 5px solid green;
+    border: 5px solid rgb(172, 192, 172);
     padding: 8px 80px;
 }
 

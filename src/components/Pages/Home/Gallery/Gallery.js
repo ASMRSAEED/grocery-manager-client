@@ -1,12 +1,14 @@
 import React from 'react';
+import './Gallery.css'
 
 
 const Gallery = () => {
+
   return (
     <div style={{ marginTop: 50 }}>
-      <section className="gallery" id="gallery">
+      <section className="gallery">
         <h1 className="heading">
-          Upcoming Items
+          UPCOMING ITEMS
         </h1>
 
         <div className="box-container">
@@ -17,11 +19,8 @@ const Gallery = () => {
             />
             <div className="content">
               <h3>Garlic Local</h3>
-
-
             </div>
           </div>
-
           <div className="box">
             <img
               src="https://i.ibb.co/yfKphyQ/22-Green-Papaya.png"
@@ -29,8 +28,6 @@ const Gallery = () => {
             />
             <div className="content">
               <h3>Green Papaya</h3>
-
-
             </div>
           </div>
           <div className="box">
@@ -38,8 +35,6 @@ const Gallery = () => {
               alt="" />
             <div className="content">
               <h3>Local Ginger</h3>
-
-
             </div>
           </div>
           <div className="box">
@@ -47,8 +42,6 @@ const Gallery = () => {
               alt="" />
             <div className="content">
               <h3>Cabbage</h3>
-
-
             </div>
           </div>
           <div className="box">
@@ -58,8 +51,6 @@ const Gallery = () => {
             />
             <div className="content">
               <h3>Ladies Finger</h3>
-
-
             </div>
           </div>
           <div className="box">
@@ -69,8 +60,6 @@ const Gallery = () => {
             />
             <div className="content">
               <h3>Water Spinach</h3>
-
-
             </div>
           </div>
           <div className="box">
@@ -80,8 +69,6 @@ const Gallery = () => {
             />
             <div className="content">
               <h3>Sweet Pumpkin Slice</h3>
-
-
             </div>
           </div>
           <div className="box">
@@ -91,8 +78,6 @@ const Gallery = () => {
             />
             <div className="content">
               <h3>Green Capsicum</h3>
-
-
             </div>
           </div>
           <div className="box">
@@ -102,8 +87,6 @@ const Gallery = () => {
             />
             <div className="content">
               <h3>Red Potato Cardinal</h3>
-
-
             </div>
           </div>
           <div className="box">
@@ -113,8 +96,6 @@ const Gallery = () => {
             />
             <div className="content">
               <h3>Red Potato</h3>
-
-
             </div>
           </div>
           <div className="box">
@@ -124,8 +105,6 @@ const Gallery = () => {
             />
             <div className="content">
               <h3>Pointed Gourd</h3>
-
-
             </div>
           </div>
           <div className="box">
@@ -137,8 +116,6 @@ const Gallery = () => {
               <h3>Snake Gourd</h3>
             </div>
           </div>
-
-
         </div>
       </section>
     </div>

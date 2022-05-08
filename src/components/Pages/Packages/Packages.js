@@ -1,5 +1,4 @@
-import React from "react";
-import "./Packages.css";
+import React from "react"
 import { useEffect, useState } from "react";
 import Package from "../Package/Package";
 import { Container } from "react-bootstrap";
@@ -12,11 +11,12 @@ const Packages = () => {
       .then((res) => res.json())
       .then((data) => setVegetable(data));
   }, []);
+  
+  
   return (
     <div style={{ marginTop: 40 }}>
       <h2 className="text-center heading">Packages</h2>
       <Container className="mb-5" >
-
         <Row>
           {vegetable.map((p) => (
             <Package key={p._id} vegetable={p}></Package>
@@ -28,12 +28,3 @@ const Packages = () => {
 };
 
 export default Packages;
-
-
-
-
-// <div>
-// {vegetable.map((p) => (
-//   <Package key={p._id} vegetable={p}></Package>
-// ))}
-// </div>

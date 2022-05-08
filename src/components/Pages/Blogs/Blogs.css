@@ -1,23 +1,12 @@
-.main {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-.main>div {
-    border: 1px solid black;
-    text-align: start;
-    padding: 0px 3px;
-}
-
 .questions {
-    margin: 20px 50px 20px 50px;
+    margin: 50px 50px 30px 50px;
 }
 
 .question-1 {
     margin-top: 25px;
     margin-bottom: 15px;
     border-radius: 10px;
-    padding: 15px 10px 30px;
+    padding: 5px 10px 30px;
     background-color: aquamarine;
 }
 
@@ -35,14 +24,20 @@
     padding: 15px 10px 30px;
     background-color: bisque;
 }
+.question-4 {
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 15px 10px 30px;
+    background-color: rgb(154, 176, 146);
+}
 
-.answer{
+.answer {
     font-weight: 600;
     font-size: 18px;
     color: black;
 }
 
-p{
+p {
     margin-left: 10px;
     font-size: 15px;
 }

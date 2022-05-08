@@ -1,11 +1,7 @@
-.signOut-btn {
-    background-color: rgb(25, 156, 78);
-    width: 100px;
-    height: 30px;
-    border-radius: 10px 1px;
-    color: white;
-}
+.logout-btn {
+    border: none;
+    font-weight: 700;
+    margin-bottom: 2px;
+    background-color: #566D56;
 
-.bg-myColor {
-    background-color: rgb(176, 229, 188);
 }

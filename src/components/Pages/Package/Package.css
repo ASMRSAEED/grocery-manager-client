@@ -1,0 +1,28 @@
+.card-images {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    height: 50%;
+}
+
+.card-top {
+    text-align: start;
+}
+
+.card-bottom {
+    text-align: start;
+    margin-left: 0px;
+    max-width: 45ch;
+}
+
+.update-btn {
+    color: white;
+    background-color: #0e400e;
+    padding: 10px 40px;
+    border-radius: 5px 25px 5px 25px;
+    position: static;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.update-btn:hover {
+    background-color: blueviolet;
+}

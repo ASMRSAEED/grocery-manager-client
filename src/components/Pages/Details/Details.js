@@ -35,7 +35,7 @@ const Details = () => {
     })
       .then((response) => response.json())
       .then(data => {
-        toast("Delivered Successful.")
+        toast("Delivered Successful")
       })
   }
 
@@ -57,36 +57,37 @@ const Details = () => {
       .then((response) => response.json())
       .then(data => {
         e.target.reset()
-        toast("Restock succeeded!!!!!!!!!!!")
+        toast("Item Added")
       })
   }
 
 
   return (
     <div>
-      <h2 className="heading">Details</h2>
+      <h2 className="heading">ITEM DETAILS</h2>
 
       <div className="row_container">
-        <div className="col-md-6 ms-5 mb-5">
-          <img style={{ width: '70%', height: '100%' }} src={vegetable?.img} alt="" />
-        </div>
-        {/* Delivered items */}
-        <div className="col-md-6 ms-2 mt-5">
-          <h3 style={{ lineHeight: '20px' }}>Product Name:{vegetable?.name}</h3>
-          <h4 style={{ lineHeight: '20px' }}>Supplier Name:{vegetable?.spName}</h4>
-          <h4 style={{ lineHeight: '20px' }}>Price:{vegetable?.price}</h4>
-          <h4 style={{ lineHeight: '20px' }}>Quantity:{vegetable?.quantity}</h4>
-          <h4 style={{ lineHeight: '20px' }}>Description:{vegetable?.description}....</h4>
-          <button onClick={() => delivered(quantity)} className="delivered_click">Delivered</button>
-        </div>
+        {<div className="col-md-4 ms-4">
+          <img style={{ width: '90%', height: '100%' }} src={vegetable?.img} alt="" />
+        </div>}
 
+        <div className="item-details col-md-6">
+          <h3>Product Name: {vegetable?.name}</h3>
+          <h4>Supplier Name: {vegetable?.spName}</h4>
+          <h4>Price: ${vegetable?.price}</h4>
+          <h4>Quantity: {vegetable?.quantity}</h4>
+          <h4>Description: {vegetable?.description}....</h4>
+        </div>
       </div>
-      {/* Restock items */}
-      <div className="restock_items">
-        <p> <h4 style={{ fontSize: "35px" }} className="text-center ">Restock items</h4></p>
+      
+      <div className="manage-btn">
+        <button onClick={() => delivered(quantity)} className="delivered_btn">Delivered</button>
+        <br />
+        <h4>RESTOCK ITEM</h4>
+        <br />
         <form onSubmit={restock} >
-          <p className="quantity"><input name="upQuantity" type="number" placeholder="Add your quantity" /></p>
-          <button className="add_click">Add now</button>
+          <p className="quantity"><input name="upQuantity" type="number" placeholder="INPUT QUANTITY" /></p>
+          <button className="restock_btn">Add now</button>
         </form>
       </div>
       <ToastContainer />

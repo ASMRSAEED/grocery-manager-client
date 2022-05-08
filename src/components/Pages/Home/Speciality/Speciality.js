@@ -63,7 +63,7 @@ const Speciality = () => {
               <FcCurrencyExchange></FcCurrencyExchange>
             </i>
             <h3>Easy payment</h3>
-            <p> Enjoy 0% interest for installment payment. * Conditions Apply</p>
+            <p> Enjoy 0% interest for installment payment.</p>
           </div>
           <div className="box border border-warning">
             <i>
@@ -71,8 +71,7 @@ const Speciality = () => {
             </i>
             <h3>Membership policy</h3>
             <p>
-              1 month free membership for all citizens (unless otherwise stated). *
-              Conditions Apply
+              1 month free membership for all citizens.
             </p>
           </div>
           <div className="box border border-warning">

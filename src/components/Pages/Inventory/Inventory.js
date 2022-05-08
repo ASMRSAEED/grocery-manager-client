@@ -6,6 +6,7 @@ import "./Inventory.css"
 import { Link } from 'react-router-dom';
 
 const Inventory = () => {
+
     const [vegetables, setVegetables] = useState([])
 
     useEffect(() => {
@@ -24,7 +25,6 @@ const Inventory = () => {
                         (<Package
                             key={vegetable._id}
                             vegetable={vegetable}
-
                         ></Package>
                         )).slice(0, 6)
                     }

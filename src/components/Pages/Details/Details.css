@@ -28,9 +28,8 @@
 }
 
 .quantity {
-    border: 2px solid rgb(181, 8, 234);
     width: 20%;
     margin: auto;
-    height: 30px;
+    height: 40px;
     border-radius: 0.5rem;
 }

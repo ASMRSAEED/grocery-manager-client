@@ -19,7 +19,7 @@ const Header = () => {
         <Navbar.Brand style={{ color: 'black', fontSize: "30px", fontWeight: '500' }}>Grocery Manager</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" style={{ color: 'black', fontSize: "20px" }}>
+          <Nav id='' className="ms-auto" style={{ color: 'black', fontSize: "20px" }}>
             <CustomLink to="/">Home</CustomLink>
             <CustomLink to="/packages">Packages</CustomLink>
             <CustomLink to="/blogs">Blogs</CustomLink>

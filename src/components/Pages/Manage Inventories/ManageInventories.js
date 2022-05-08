@@ -16,7 +16,7 @@ const ManageInventories = () => {
   }, [])
 
   const inventoryDelete = id => {
-    const proceed = window.confirm('Are you sure you want to delete?')
+    const proceed = window.confirm('Are You Sure To Delete This Item?')
     if (proceed) {
       const url = `https://sheltered-basin-32707.herokuapp.com/vegetable/${id}`;
       fetch(url, {
@@ -35,7 +35,7 @@ const ManageInventories = () => {
               confirmButtonText: "Yes, delete it!",
             }).then((result) => {
               if (result.isConfirmed) {
-                Swal.fire("Deleted!", "Your file has been deleted.", "success");
+                Swal.fire('Your file has been deleted');
               }
             });
             const remainingProducts = vegetables?.filter(

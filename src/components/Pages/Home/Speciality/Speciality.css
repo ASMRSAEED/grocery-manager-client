@@ -30,3 +30,32 @@
     font-size: 1rem;
     line-height: 1;
 }
+
+@media (max-width: 460px) {
+
+    .services .box-container {
+        margin: 1rem;
+        display: block;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+
+    }
+
+    .services .box-container .box {
+        margin: 20px 0px 20px 0px;
+        border-radius: 15px;
+        height: 40rem;
+    }
+
+    .services .box-container .box i {
+        font-size: 10rem;
+    }
+
+    .services .box-container .box h3 {
+        font-size: 4rem;
+    }
+
+    .services .box-container .box p {
+        font-size: 3rem;
+    }
+}

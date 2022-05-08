@@ -2,7 +2,7 @@
   background: #B0E5BC;
 }
 
-h2{
+h2 {
   margin-top: 25px;
 }
 
@@ -38,3 +38,46 @@ h2{
 
 }
 
+
+@media (max-width: 460px) {
+
+  h2 {
+    font-size: 20px;
+    padding-top: 25px;
+  }
+
+  .footer-details {
+    text-align: center;
+    display: block;
+
+  }
+
+  .footer .social-icon {
+    font-size: 2.5rem;
+  }
+
+  .social-icon a {
+    padding: 1rem;
+  }
+
+  .footer-middle a {
+    font-size: 2rem;
+    display: block;
+    text-decoration: none;
+  }
+
+  .footer-end a {
+    font-size: 2rem;
+    display: block;
+    text-decoration: none;
+  }
+
+  .footer .copyright {
+    font-size: 2rem;
+
+  }
+
+
+
+
+}

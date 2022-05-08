@@ -68,7 +68,7 @@ const Details = () => {
 
       <div className="row_container">
         {<div className="col-md-4 ms-4">
-          <img style={{ width: '90%', height: '100%' }} src={vegetable?.img} alt="" />
+          <img style={{ width: '90%', height: '100%',borderRadius: "5rem" }} src={vegetable?.img} alt="" />
         </div>}
 
         <div className="item-details col-md-6">
@@ -86,7 +86,7 @@ const Details = () => {
         <h4>RESTOCK ITEM</h4>
         <br />
         <form onSubmit={restock} >
-          <p className="quantity"><input name="upQuantity" type="number" placeholder="INPUT QUANTITY" /></p>
+          <p className="quantity"><input style={{ width: '100%', height: '100%', backgroundColor:"#D4701E",borderRadius: "5rem" }} name="upQuantity" type="number" placeholder="INPUT QUANTITY" /></p>
           <button className="restock_btn">Add now</button>
         </form>
       </div>

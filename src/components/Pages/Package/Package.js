@@ -11,9 +11,9 @@ const Package = (props) => {
     navigate(`/vegetable/${id}`)
   }
   return (
-    
+
     <Col className="my-5 text-center" sm={12} md={6} lg={4}>
-      <div className='shadow' style={{ backgroundColor: "#f9f4f4", borderRadius: "25px", width:"415px", height:"750px" }}>
+      <div className='shadow' style={{ backgroundColor: "#f9f4f4", borderRadius: "25px", width: "415px", height: "750px" }}>
         <Card.Img className='card-images' src={img} />
         <Card.Body className='card-top'>
           <Card.Title className="text-uppercase"><b>{name}</b></Card.Title>
@@ -24,7 +24,7 @@ const Package = (props) => {
           <Card.Text className='card-bottom'>{description.slice(0, 250)}...</Card.Text>
 
         </Card.Body>
-          <button className='update-btn' onClick={() => go(_id)}>Update</button>
+        <button className='update-btn' onClick={() => go(_id)}>Update</button>
       </div>
     </Col>
   );

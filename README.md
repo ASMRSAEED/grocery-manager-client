@@ -1,6 +1,5 @@
-# Grocery Manager
+# Welcome to my Grocery Manager app
 
-## Welcome to my Grocery Manager app
 
 # [Live Website Link](https://grocery-manager-a2e7a.web.app/)
 
